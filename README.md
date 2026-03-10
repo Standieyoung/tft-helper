@@ -21,11 +21,19 @@ cd tft-helper
 
 ### 2. 创建虚拟环境并安装依赖
 
+**macOS / Linux:**
+
 ```bash
 python3 -m venv venv
-source venv/bin/activate    # macOS / Linux
-# venv\Scripts\activate     # Windows
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
+**Windows:**
+
+```powershell
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -113,8 +121,20 @@ tft-helper/
 - mss — 屏幕截图
 - httpx — 网络请求
 
+## 安装 Tesseract OCR
+
+屏幕识别的 OCR 功能需要安装 Tesseract：
+
+| 平台 | 安装方式 |
+|------|----------|
+| **macOS** | `brew install tesseract` |
+| **Windows** | 从 [UB-Mannheim/tesseract](https://github.com/UB-Mannheim/tesseract/wiki) 下载安装包，安装时勾选"Add to PATH" |
+| **Linux** | `sudo apt install tesseract-ocr` |
+
+> Windows 如果安装后仍提示找不到 tesseract，需要手动将安装路径（默认 `C:\Program Files\Tesseract-OCR`）添加到系统环境变量 PATH 中。
+
 ## 注意事项
 
-- macOS 用户使用屏幕截图功能需要在 **系统设置 → 隐私与安全性 → 屏幕录制** 中授权终端或 IDE
-- Tesseract OCR 需要单独安装：`brew install tesseract`（macOS）或 `apt install tesseract-ocr`（Linux）
+- **macOS** — 使用屏幕截图功能需要在 **系统设置 → 隐私与安全性 → 屏幕录制** 中授权终端或 IDE
+- **Windows** — 所有功能均可正常使用，无需额外配置
 - 阵容数据建议每次版本更新后手动维护 `data/cache/comps.json`
