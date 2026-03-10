@@ -26,3 +26,4 @@ Thumbs.db
 config_api.json
 config_screen.json
 data/cache/cdragon_tft_raw.json
+debug_output/

@@ -25,16 +25,9 @@ class GameStateParser:
     def parse_current_state(self) -> GameState:
         """解析当前完整游戏状态"""
         state = GameState()
-
-        # 解析回合信息
         state.round = self._parse_round()
-
-        # 解析己方信息
         state.my_board = self._parse_my_board()
-
-        # 解析商店
         state.shop = self._parse_shop()
-
         return state
 
     def _parse_round(self) -> str:
@@ -43,47 +36,47 @@ class GameStateParser:
         if region is None:
             return ""
 
-        text = self._ocr(region)
-        # 匹配 "X-Y" 格式
-        match = re.search(r"(\d+)-(\d+)", text)
+        text = self._ocr_number(region, mode="white")
+        match = re.search(r"(\d+)\s*[-–—]\s*(\d+)", text)
         if match:
             return f"{match.group(1)}-{match.group(2)}"
-        return text.strip()
+        return ""
 
     def _parse_my_board(self) -> PlayerBoard:
         """解析己方棋盘"""
         board = PlayerBoard(player_id=0)
 
-        # 识别等级
         level_region = self.capture.capture_region("level_info")
         if level_region is not None:
-            text = self._ocr(level_region)
+            text = self._ocr_number(level_region, mode="white")
             nums = re.findall(r"\d+", text)
             if nums:
-                board.level = int(nums[0])
+                val = int(nums[0])
+                if 1 <= val <= 11:
+                    board.level = val
 
-        # 识别金币
         gold_region = self.capture.capture_region("gold_info")
         if gold_region is not None:
-            text = self._ocr(gold_region)
+            text = self._ocr_number(gold_region, mode="gold")
             nums = re.findall(r"\d+", text)
             if nums:
-                board.gold = int(nums[0])
+                val = int(nums[0])
+                if 0 <= val <= 999:
+                    board.gold = val
 
-        # 识别血量
         hp_region = self.capture.capture_region("hp_info")
         if hp_region is not None:
-            text = self._ocr(hp_region)
+            text = self._ocr_number(hp_region, mode="white")
             nums = re.findall(r"\d+", text)
             if nums:
-                board.hp = int(nums[0])
+                val = int(nums[0])
+                if 1 <= val <= 100:
+                    board.hp = val
 
-        # 识别场上英雄
         board_region = self.capture.capture_region("my_board")
         if board_region is not None:
             detected = self.matcher.identify_champion(board_region)
             for d in detected:
-                # 截取该英雄区域来检测星级
                 x, y = d["position"]
                 size = d.get("size", (48, 48))
                 h_img, w_img = board_region.shape[:2]
@@ -100,14 +93,13 @@ class GameStateParser:
                     "confidence": d["confidence"],
                 })
 
-        # 识别备战席英雄
         bench_region = self.capture.capture_region("bench")
         if bench_region is not None:
             detected = self.matcher.identify_champion(bench_region)
             for d in detected:
                 board.champions.append({
                     "id": d["id"],
-                    "star": 1,  # 备战席默认 1 星
+                    "star": 1,
                     "confidence": d["confidence"],
                 })
 
@@ -121,10 +113,7 @@ class GameStateParser:
         return self.matcher.identify_shop(slots)
 
     def parse_opponent(self, opponent_id: int) -> PlayerBoard:
-        """
-        解析当前查看的对手棋盘
-        需要玩家手动切到对手视角时调用
-        """
+        """解析对手棋盘（需要手动切到对手视角）"""
         board = PlayerBoard(player_id=opponent_id)
 
         region = self.capture.capture_region("opponent_board")
@@ -140,7 +129,6 @@ class GameStateParser:
                 y2 = min(h_img, y + size[1] + 5)
                 champ_region = region[y1:y2, x1:x2]
                 star = self.matcher.detect_star_level(champ_region)
-
                 board.champions.append({
                     "id": d["id"],
                     "star": star,
@@ -154,22 +142,88 @@ class GameStateParser:
         region = self.capture.capture_region("augment_choice_1")
         if region is None:
             return False
-        # 强化选择界面有特殊的背景色
         hsv = cv2.cvtColor(region, cv2.COLOR_BGR2HSV)
-        # 检测暗色背景
         dark_mask = cv2.inRange(hsv, np.array([0, 0, 0]), np.array([180, 50, 80]))
         dark_ratio = np.sum(dark_mask > 0) / max(dark_mask.size, 1)
         return dark_ratio > 0.4
 
-    def _ocr(self, image: np.ndarray) -> str:
-        """OCR 文字识别"""
+    # --- OCR ---
+
+    def _ocr_number(self, image: np.ndarray, mode: str = "white") -> str:
+        """
+        针对 TFT 游戏 UI 优化的数字 OCR。
+
+        TFT 中不同区域的文字颜色不同:
+        - white: 回合、等级、血量 (白色/浅色文字)
+        - gold:  金币 (黄色文字)
+
+        使用多种预处理策略，取最佳结果。
+        """
         if pytesseract is None:
             return ""
-        # 预处理: 灰度 + 二值化
+
+        candidates = []
+
+        # 放大小图以提高 OCR 精度
+        h, w = image.shape[:2]
+        if w < 100 or h < 40:
+            scale = max(3, 120 // max(w, 1))
+            image = cv2.resize(image, (w * scale, h * scale), interpolation=cv2.INTER_CUBIC)
+
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        _, binary = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
+        hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+
+        preprocessed_images = []
+
+        if mode == "gold":
+            # 黄色文字: 提取 HSV 中的黄色通道
+            yellow_mask = cv2.inRange(hsv,
+                                      np.array([15, 80, 150]),
+                                      np.array([40, 255, 255]))
+            preprocessed_images.append(yellow_mask)
+            # 也试试高亮度通道
+            bright_mask = cv2.inRange(hsv,
+                                      np.array([0, 0, 180]),
+                                      np.array([180, 255, 255]))
+            preprocessed_images.append(bright_mask)
+
+        # 白色/浅色文字: 高灰度阈值
+        for thresh in (140, 160, 180, 200):
+            _, binary = cv2.threshold(gray, thresh, 255, cv2.THRESH_BINARY)
+            preprocessed_images.append(binary)
+
+        # 反色 (白底黑字有时识别更好)
+        _, inv_binary = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY_INV)
+        preprocessed_images.append(inv_binary)
+
+        # 自适应阈值
+        adaptive = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                         cv2.THRESH_BINARY, 11, 2)
+        preprocessed_images.append(adaptive)
+
+        # OTSU 自动阈值
+        _, otsu = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        preprocessed_images.append(otsu)
+
+        for img in preprocessed_images:
+            text = self._run_tesseract(img)
+            if text and re.search(r"\d", text):
+                candidates.append(text)
+
+        if not candidates:
+            return ""
+
+        # 选包含数字最多的结果
+        best = max(candidates, key=lambda t: len(re.findall(r"\d", t)))
+        return best
+
+    @staticmethod
+    def _run_tesseract(binary_image: np.ndarray) -> str:
+        """执行 tesseract OCR"""
         try:
-            text = pytesseract.image_to_string(binary, lang="eng", config="--psm 7")
+            # whitelist 只识别数字和常见分隔符
+            config = "--psm 7 -c tessedit_char_whitelist=0123456789-/"
+            text = pytesseract.image_to_string(binary_image, lang="eng", config=config)
             return text.strip()
         except Exception:
             return ""

@@ -168,6 +168,9 @@ def main():
         from scripts.calibrate_screen import Calibrator
         calibrator = Calibrator()
         calibrator.run()
+    elif "--diagnose" in sys.argv:
+        from scripts.diagnose import main as diagnose_main
+        diagnose_main()
     elif "--download-icons" in sys.argv:
         from scripts.download_icons import download_champion_icons, download_item_icons
         download_champion_icons()
@@ -180,6 +183,7 @@ def main():
         print("\n用法:")
         print("  python main.py --ui              启动图形界面")
         print("  python main.py --demo            演示决策引擎")
+        print("  python main.py --diagnose        诊断屏幕识别(游戏中运行)")
         print("  python main.py --calibrate       屏幕坐标校准")
         print("  python main.py --download-icons  下载英雄/装备图标")
         print("  python main.py --update-comps    查看阵容数据")
