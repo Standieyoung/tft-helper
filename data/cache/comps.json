@@ -1,0 +1,152 @@
+[
+  {
+    "name": "以绪塔尔巴德",
+    "tier": "S",
+    "champions": ["TFT16_Bard", "TFT16_Neeko", "TFT16_Orianna", "TFT16_Vi", "TFT16_Qiyana", "TFT16_Nidalee", "TFT16_Sona", "TFT16_Caitlyn"],
+    "items": {
+      "TFT16_Bard": ["蓝buff", "大天使之杖", "珠光护手"],
+      "TFT16_Neeko": ["石像鬼板甲", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "6级猛D，D出所有2费三星再拉人口",
+    "difficulty": "中",
+    "avg_placement": 3.2,
+    "play_rate": 0.12,
+    "win_rate": 0.18
+  },
+  {
+    "name": "斗士巴德",
+    "tier": "S",
+    "champions": ["TFT16_Bard", "TFT16_Sion", "TFT16_Illaoi", "TFT16_Wukong", "TFT16_Shen", "TFT16_Vi", "TFT16_Sett", "TFT16_Briar"],
+    "items": {
+      "TFT16_Bard": ["蓝buff", "大天使之杖", "珠光护手"],
+      "TFT16_Sion": ["日炎斗篷", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "9人口成型，巴德核心输出，前排堆坦",
+    "difficulty": "低",
+    "avg_placement": 3.4,
+    "play_rate": 0.15,
+    "win_rate": 0.16
+  },
+  {
+    "name": "闭环芸阿娜",
+    "tier": "S",
+    "champions": ["TFT16_Karma", "TFT16_Wukong", "TFT16_Lissandra", "TFT16_Ryze", "TFT16_Shen", "TFT16_Sona", "TFT16_Lulu", "TFT16_Rumble"],
+    "items": {
+      "TFT16_Karma": ["鬼索的狂暴之刃", "海妖杀手", "无尽之刃"],
+      "TFT16_Wukong": ["狂徒铠甲", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "8级成型4地区羁绊，升9解锁流浪效果",
+    "difficulty": "中",
+    "avg_placement": 3.5,
+    "play_rate": 0.10,
+    "win_rate": 0.15
+  },
+  {
+    "name": "梅尔法师",
+    "tier": "A",
+    "champions": ["TFT16_Mel", "TFT16_Swain", "TFT16_Neeko", "TFT16_Vi", "TFT16_Seraphine", "TFT16_Lulu", "TFT16_Sion", "TFT16_Briar"],
+    "items": {
+      "TFT16_Mel": ["蓝buff", "灭世者的死亡之帽", "珠光护手"],
+      "TFT16_Swain": ["石像鬼板甲", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "9人口成型，对经济要求高，梅尔技能提供光明装",
+    "difficulty": "高",
+    "avg_placement": 3.6,
+    "play_rate": 0.08,
+    "win_rate": 0.14
+  },
+  {
+    "name": "比尔吉沃特九五",
+    "tier": "A",
+    "champions": ["TFT16_MissFortune", "TFT16_Gangplank", "TFT16_Nautilus", "TFT16_Illaoi", "TFT16_TwistedFate", "TFT16_Wukong", "TFT16_Sett", "TFT16_Bard"],
+    "items": {
+      "TFT16_MissFortune": ["无尽之刃", "巨人杀手", "最后的轻语"],
+      "TFT16_Wukong": ["狂徒铠甲", "荆棘之甲", "日炎斗篷"]
+    },
+    "augments": [],
+    "playstyle": "比尔吉沃特核心，9人口上5费卡提升上限",
+    "difficulty": "中",
+    "avg_placement": 3.8,
+    "play_rate": 0.09,
+    "win_rate": 0.13
+  },
+  {
+    "name": "德玛西亚",
+    "tier": "A",
+    "champions": ["TFT16_Garen", "TFT16_JarvanIV", "TFT16_Sona", "TFT16_Galio", "TFT16_Lux", "TFT16_Xin", "TFT16_Kayle", "TFT16_Swain"],
+    "items": {
+      "TFT16_Kayle": ["鬼索的狂暴之刃", "无尽之刃", "巨人杀手"],
+      "TFT16_Garen": ["日炎斗篷", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "7德玛西亚核心，8-9人口成型",
+    "difficulty": "低",
+    "avg_placement": 3.7,
+    "play_rate": 0.11,
+    "win_rate": 0.14
+  },
+  {
+    "name": "虚空六九",
+    "tier": "A",
+    "champions": ["TFT16_KogMaw", "TFT16_Malzahar", "TFT16_KhaZix", "TFT16_Belveth", "TFT16_Kassadin", "TFT16_VelKoz", "TFT16_Nautilus", "TFT16_Vi"],
+    "items": {
+      "TFT16_VelKoz": ["蓝buff", "大天使之杖", "灭世者的死亡之帽"],
+      "TFT16_Nautilus": ["日炎斗篷", "荆棘之甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "挂满八回合虚空获得峡谷先锋，前期用虚空棋子过渡",
+    "difficulty": "高",
+    "avg_placement": 3.9,
+    "play_rate": 0.07,
+    "win_rate": 0.12
+  },
+  {
+    "name": "艾欧尼亚瑟提",
+    "tier": "B",
+    "champions": ["TFT16_Sett", "TFT16_Shen", "TFT16_Jhin", "TFT16_Karma", "TFT16_LeeSin", "TFT16_Akali", "TFT16_Irelia", "TFT16_Yasuo"],
+    "items": {
+      "TFT16_Sett": ["泰坦的坚决", "荆棘之甲", "狂徒铠甲"],
+      "TFT16_Akali": ["无尽之刃", "海妖杀手", "巨人杀手"]
+    },
+    "augments": [],
+    "playstyle": "艾欧尼亚体系，库库打钱，8级必得瑟提",
+    "difficulty": "中",
+    "avg_placement": 4.0,
+    "play_rate": 0.06,
+    "win_rate": 0.11
+  },
+  {
+    "name": "约德尔安妮",
+    "tier": "B",
+    "champions": ["TFT16_Annie", "TFT16_Lulu", "TFT16_Rumble", "TFT16_Tristana", "TFT16_Teemo", "TFT16_Veigar", "TFT16_Poppy", "TFT16_Heimerdinger"],
+    "items": {
+      "TFT16_Annie": ["灭世者的死亡之帽", "蓝buff", "珠光护手"],
+      "TFT16_Poppy": ["日炎斗篷", "荆棘之甲", "石像鬼板甲"]
+    },
+    "augments": [],
+    "playstyle": "约德尔人核心，安妮大招AOE输出",
+    "difficulty": "低",
+    "avg_placement": 4.1,
+    "play_rate": 0.05,
+    "win_rate": 0.10
+  },
+  {
+    "name": "祖安大龙",
+    "tier": "B",
+    "champions": ["TFT16_Blitzcrank", "TFT16_Singed", "TFT16_Twitch", "TFT16_Zac", "TFT16_Warwick", "TFT16_Viktor", "TFT16_Urgot", "TFT16_DrMundo"],
+    "items": {
+      "TFT16_Viktor": ["蓝buff", "灭世者的死亡之帽", "大天使之杖"],
+      "TFT16_Zac": ["日炎斗篷", "狂徒铠甲", "心之钢"]
+    },
+    "augments": [],
+    "playstyle": "祖安体系堆毒，大龙作为终极前排",
+    "difficulty": "中",
+    "avg_placement": 4.2,
+    "play_rate": 0.04,
+    "win_rate": 0.09
+  }
+]

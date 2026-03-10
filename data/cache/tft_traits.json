@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "TFT16_Teamup_SingedTeemo",
+    "name": "绝命毒师",
+    "breakpoints": [
+      2
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_XerathUnique",
+    "name": "远古巫灵",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Freljord",
+    "name": "弗雷尔卓德",
+    "breakpoints": [
+      3,
+      5,
+      7
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Juggernaut",
+    "name": "主宰",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Rapidfire",
+    "name": "迅击战士",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Longshot",
+    "name": "狙神",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Vanquisher",
+    "name": "征服者",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Caretaker",
+    "name": "星界游神",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Explorer",
+    "name": "以绪塔尔",
+    "breakpoints": [
+      3,
+      5,
+      7
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Slayer",
+    "name": "裁决战士",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Sorcerer",
+    "name": "法师",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Emperor",
+    "name": "沙漠皇帝",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_AurelionSolUnique",
+    "name": "铸星龙王",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_ShyvanaUnique",
+    "name": "龙血武姬",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Gunslinger",
+    "name": "枪手",
+    "breakpoints": [
+      2,
+      4
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_HexMech",
+    "name": "海克斯机甲",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Teamup_AmbessaKindred",
+    "name": "与狼共舞",
+    "breakpoints": [
+      2
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_SylasTrait",
+    "name": "解脱者",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Soulbound",
+    "name": "系魂圣枪",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Piltover",
+    "name": "皮尔特沃夫",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Teamup_EkkoZilean",
+    "name": "时间旅者",
+    "breakpoints": [
+      1,
+      2
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 1,
+        "desc": ""
+      },
+      {
+        "min_units": 2,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_DarkinWeapon",
+    "name": "暗裔",
+    "breakpoints": [
+      1,
+      2,
+      3
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 1,
+        "desc": ""
+      },
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_KindredUnique",
+    "name": "永猎双子",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_DarkChild",
+    "name": "黑暗之女",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_AatroxUnique",
+    "name": "暗裔剑魔",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_KaisaUnique",
+    "name": "虚空之女",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Teamup_JarvanShyvana",
+    "name": "巨龙卫士",
+    "breakpoints": [
+      2
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Magus",
+    "name": "耀光使",
+    "breakpoints": [
+      2,
+      4
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Void",
+    "name": "虚空",
+    "breakpoints": [
+      2,
+      4,
+      6,
+      9
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 8,
+        "desc": ""
+      },
+      {
+        "min_units": 9,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_RuneMage",
+    "name": "符文法师",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_TheBoss",
+    "name": "腕豪",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Glutton",
+    "name": "河流之王",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Invoker",
+    "name": "神谕者",
+    "breakpoints": [
+      2,
+      4
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Demacia",
+    "name": "德玛西亚",
+    "breakpoints": [
+      3,
+      5,
+      7,
+      11
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 10,
+        "desc": ""
+      },
+      {
+        "min_units": 11,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Bilgewater",
+    "name": "比尔吉沃特",
+    "breakpoints": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 9,
+        "desc": ""
+      },
+      {
+        "min_units": 10,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_BaronUnique",
+    "name": "纳什男爵",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Targon",
+    "name": "巨神峰",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Shurima",
+    "name": "恕瑞玛",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      4
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 25000,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Blacksmith",
+    "name": "山隐之焰",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_ShadowIsles",
+    "name": "暗影岛",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Harvester",
+    "name": "远古恐惧",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_ZaahenTrait",
+    "name": "不落魔锋",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Heroic",
+    "name": "正义巨像",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Noxus",
+    "name": "诺克萨斯",
+    "breakpoints": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 9,
+        "desc": ""
+      },
+      {
+        "min_units": 10,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Yordle",
+    "name": "约德尔人",
+    "breakpoints": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 7,
+        "desc": ""
+      },
+      {
+        "min_units": 8,
+        "max_units": 25000,
+        "desc": ""
+      },
+      {
+        "min_units": 10,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Zaun",
+    "name": "祖安",
+    "breakpoints": [
+      3,
+      5,
+      7
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Brawler",
+    "name": "斗士",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Chronokeeper",
+    "name": "时光守护者",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Warden",
+    "name": "神盾使",
+    "breakpoints": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 2,
+        "desc": ""
+      },
+      {
+        "min_units": 3,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Ionia",
+    "name": "艾欧尼亚",
+    "breakpoints": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "effects": [
+      {
+        "min_units": 3,
+        "max_units": 4,
+        "desc": ""
+      },
+      {
+        "min_units": 5,
+        "max_units": 6,
+        "desc": ""
+      },
+      {
+        "min_units": 7,
+        "max_units": 25000,
+        "desc": ""
+      },
+      {
+        "min_units": 10,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Defender",
+    "name": "护卫",
+    "breakpoints": [
+      2,
+      4,
+      6
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 3,
+        "desc": ""
+      },
+      {
+        "min_units": 4,
+        "max_units": 5,
+        "desc": ""
+      },
+      {
+        "min_units": 6,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Teamup_LucianVayne",
+    "name": "光明哨兵",
+    "breakpoints": [
+      2
+    ],
+    "effects": [
+      {
+        "min_units": 2,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": "TFT16_Huntress",
+    "name": "狂野女猎手",
+    "breakpoints": [
+      1
+    ],
+    "effects": [
+      {
+        "min_units": 1,
+        "max_units": 25000,
+        "desc": ""
+      }
+    ]
+  }
+]

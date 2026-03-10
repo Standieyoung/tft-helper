@@ -1,0 +1,39 @@
+# TFT Helper 配置文件
+
+# 数据源
+data_source:
+  datatft_base_url: "https://www.datatft.com"
+  riot_ddragon_url: "https://ddragon.leagueoflegends.com"
+  cache_ttl_hours: 4  # 缓存过期时间
+
+# 牌池配置 (每个英雄的总张数)
+card_pool:
+  1: 22  # 1费
+  2: 20  # 2费
+  3: 17  # 3费
+  4: 10  # 4费
+  5: 9   # 5费
+
+# 升级概率表 (等级 -> 各费用概率)
+level_odds:
+  2:  [100, 0, 0, 0, 0]
+  3:  [75, 25, 0, 0, 0]
+  4:  [55, 30, 15, 0, 0]
+  5:  [45, 33, 20, 2, 0]
+  6:  [30, 40, 25, 5, 0]
+  7:  [19, 30, 40, 10, 1]
+  8:  [18, 25, 32, 22, 3]
+  9:  [10, 20, 25, 30, 15]
+  10: [5, 10, 20, 33, 32]
+  11: [1, 2, 12, 50, 35]
+
+# 屏幕识别
+recognition:
+  capture_interval_ms: 1000  # 截图间隔
+  confidence_threshold: 0.85  # 图像匹配置信度
+  game_resolution: [1920, 1080]  # 游戏分辨率
+
+# UI
+ui:
+  overlay_opacity: 0.85
+  font_size: 14
